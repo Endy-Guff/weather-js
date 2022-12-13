@@ -50,7 +50,7 @@ document.addEventListener('keydown', e => {
 let uvIndex = 0;
 
 const init = async () => {
-    const result = await fetch(`https://api.weatherstack.com/current?access_key=f92d475fc672e5f0ddb9ee498c7e6d4f&query=${city}`);
+    const result = await fetch(`http://api.weatherstack.com/current?access_key=f92d475fc672e5f0ddb9ee498c7e6d4f&query=${city}`);
     const data = await result.json();
 
     console.log(data);
