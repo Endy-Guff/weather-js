@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="brief">
+            <div class="input__box">
+                <input class="brief__search-input" type="search" name="search" placeholder="поиск города ..." autocomplete="off">
+            </div>
+            <div class="brief__circle">
+                <div class="brief__circle--small">
+                    <img class="brief__weather-img" src="img/cloud.svg" alt="">
+                </div>
+            </div>
+            <div class="brief__info">
+                <div class="brief__info-temp">
+                    <span>9°</span>
+                </div>
+                <div class="brief__info-box">
+                    <div class="brief__info-item">
+                        <span>Ростов-на-Дону</span>
+                    </div>
+                    <div class="brief__info-item" id="brief__info-date">
+                        <span>Понедельник, 13:17</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <div class="total__head">
+                <div class="total__checkbox-inner">
+                    <span>℃/℉</span>
+                    <input class="total__checkbox-item" type="checkbox">
+                </div>
+            </div>
+            <div class="total__aside">
+                <div class="total__aside-box">
+                    <div class="total__aside-item">
+                        <p class="total__aside-title">
+                            УФ-индекс
+                        </p>
+                        <div class="slider"></div>
+                        <span class="total__aside-val total__aside-val--transform" id="uvVal">7</span>
+                    </div>
+                    <div class="total__aside-item">
+                        <p class="total__aside-title">
+                            Ветер
+                        </p>
+                        <span class="total__aside-val" id="windSpeed">7<span>м/c</span></span>
+                        <p class="total__aside-scale" id="windDegree">
+                            Легкий ветер
+                        </p>
+                    </div>
+                    <div class="total__aside-item">
+                        <p class="total__aside-title">
+                           Облачность
+                        </p>
+                        <span class="total__aside-val" id="cloudCover">81<span>%</span></span>
+                        <p class="total__aside-scale" id="cloudCoverScale">
+                            Высокая облачность
+                        </p>
+                        <div class="total__range-bar">
+                            <div class="total__range-bar--position">
+                                <div class="total__range-scale"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total__aside-item">
+                        <p class="total__aside-title">
+                            Видимость
+                        </p>
+                        <span class="total__aside-val" id="visibility">10<span>км</span></span>
+                        <p class="total__aside-scale" id="visibilityScale">
+                            Хорошая видимость
+                        </p>
+                    </div>
+                    <div class="total__aside-item total__aside-item--basis">
+                        <div class="total__aside-content">
+                            <p class="total__aside-title">
+                                Уровень осадков
+                            </p>
+                            <span class="total__aside-val" id="precip">10<span>мм</span></span>
+                        </div>
+                        <div class="wave">
+                            <div class="wave__one"></div>
+                            <div class="wave__two"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
